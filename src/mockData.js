@@ -23,7 +23,7 @@ export const siteContent = {
       "/elephantbet_hero (5).png"
     ],
     ctaText: "Registrar Agora",
-    ctaUrl: "https://www.elephantbet.co.ao/affiliates/?btag=2588172",
+    ctaUrl: "https://www.elephantbet.co.ao/pt/?action=register&btag=2588172/",
     features: [
       "Bónus de Boas-Vindas",
       "Odds Competitivas",
@@ -63,22 +63,28 @@ export const siteContent = {
         id: 1,
         title: "Como Criar Conta",
         description: "Tutorial completo de registo na Elephant Bet",
-        thumbnailUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        thumbnailUrl: "/elephantbet_hero (1).png",
+        videoUrl: "/como_abrir_conta.mp4",
+        type: "video"
       },
       {
         id: 2,
-        title: "Como Fazer Depósito",
-        description: "Aprenda a depositar dinheiro na sua conta",
-        thumbnailUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title: "Como Verificar Conta",
+        description: "Tutorial de verificação de conta na Elephant Bet",
+        thumbnailUrl: "/elephantbet_hero (2).png",
+        videoUrl: "/como_verificar_conta.mp4",
+        type: "video"
       },
       {
         id: 3,
-        title: "Como Fazer Levantamento",
-        description: "Processo simples para levantar os seus ganhos",
-        thumbnailUrl: "https://img.youtube.com/vi/dQw4w9WgXcQ/maxresdefault.jpg",
-        videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title: "Como Fazer Depósito",
+        description: "Tutorial de depósito na Elephant Bet",
+        thumbnailUrl: "/elephantbet_hero (3).png",
+        images: [
+          "/deposito_por_voucher.jpeg",
+          "/deposito_pelo_express.jpeg"
+        ],
+        type: "images"
       }
     ]
   },
@@ -121,86 +127,86 @@ export const siteContent = {
       {
         id: "criar-conta",
         question: "Como Criar Conta?",
-        answer: `**Passo a Passo para Criar Conta:**
+        answer: `Passo a Passo para Criar Conta:
 
-1. **Aceder ao Site**: Visite www.elephantbet.co.ao ou clique no botão "Registrar Agora" acima.
+1. Aceder ao Site: Clique no botão "Registrar Agora" acima.
 
-2. **Iniciar Registo**: Clique no botão "Registar" no canto superior direito da página.
+2. Iniciar Registo: Clique no botão "Registar" no canto superior direito da página.
 
-3. **Inserir Dados Pessoais**:
-   - Nome completo
-   - Data de nascimento
-   - Número de telefone (formato angolano)
-   - Email válido
+3. Inserir Dados Pessoais:
+    Nome completo
+    Data de nascimento
+    Número de telefone (formato angolano)
+    Email válido
 
-4. **Criar Password**: Escolha uma senha forte com pelo menos 8 caracteres.
+4. Criar Password: Escolha uma senha forte com pelo menos 8 caracteres.
 
-5. **Aceitar Termos**: Leia e aceite os Termos e Condições e a Política de Privacidade.
+5. Aceitar Termos: Leia e aceite os Termos e Condições e a Política de Privacidade.
 
-6. **Confirmar Registo**: Clique em "Registar" para concluir.
+6. Confirmar Registo: Clique em "Registar" para concluir.
 
-7. **Verificação**: Receberá um SMS ou email de confirmação. Siga as instruções para ativar a sua conta.
+7. Verificação: Receberá um SMS ou email de confirmação. Siga as instruções para ativar a sua conta.
 
-**Nota**: Deve ter pelo menos 18 anos para criar uma conta.`
+Nota: Deve ter pelo menos 18 anos para criar uma conta.`
       },
       {
         id: "como-apostar",
         question: "Como Apostar?",
-        answer: `**Guia Completo para Fazer Apostas:**
+        answer: `Guia Completo para Fazer Apostas:
 
-1. **Criar e Verificar Conta**: Complete o registo conforme explicado acima.
+1. Criar e Verificar Conta: Complete o registo conforme explicado acima.
 
-2. **Fazer Depósito**: Adicione fundos à sua conta usando um dos métodos de pagamento disponíveis.
+2. Fazer Depósito: Adicione fundos à sua conta usando um dos métodos de pagamento disponíveis.
 
-3. **Escolher Desporto**: Navegue pelo menu lateral e selecione o desporto de sua preferência (futebol, basquetebol, etc.).
+3. Escolher Desporto: Navegue pelo menu lateral e selecione o desporto de sua preferência (futebol, basquetebol, etc.).
 
-4. **Selecionar Evento**: Escolha o jogo ou evento no qual deseja apostar.
+4. Selecionar Evento: Escolha o jogo ou evento no qual deseja apostar.
 
-5. **Escolher Mercado**: Selecione o tipo de aposta (resultado final, handicap, over/under, etc.).
+5. Escolher Mercado: Selecione o tipo de aposta (resultado final, handicap, over/under, etc.).
 
-6. **Adicionar ao Boletim**: Clique na odd desejada para adicionar ao seu boletim de apostas.
+6. Adicionar ao Boletim: Clique na odd desejada para adicionar ao seu boletim de apostas.
 
-7. **Inserir Valor**: Digite o valor que deseja apostar.
+7. Inserir Valor: Digite o valor que deseja apostar.
 
-8. **Confirmar Aposta**: Revise os detalhes e clique em "Colocar Aposta".
+8. Confirmar Aposta: Revise os detalhes e clique em "Colocar Aposta".
 
-9. **Acompanhar Resultado**: Acesse "Minhas Apostas" para ver o status.
+9. Acompanhar Resultado: Acesse "Minhas Apostas" para ver o status.
 
-10. **Jogar com Responsabilidade**: Estabeleça limites e aposte apenas o que pode perder.
+10. Jogar com Responsabilidade: Estabeleça limites e aposte apenas o que pode perder.
 
-**Dica**: Comece com apostas simples antes de experimentar apostas múltiplas.`
+Dica: Comece com apostas simples antes de experimentar apostas múltiplas.`
       },
       {
         id: "bonus",
         question: "Como Usar Bónus?",
-        answer: `**Tudo Sobre Bónus na Elephant Bet:**
+        answer: `Tudo Sobre Bónus na Elephant Bet:
 
-**Tipos de Bónus:**
+Tipos de Bónus:
 - Bónus de Boas-Vindas (para novos clientes)
 - Bónus de Depósito
 - Bónus de Fidelidade
 - Promoções Especiais
 
-**Como Ativar:**
+Como Ativar:
 1. Faça login na sua conta
 2. Acesse a seção "Promoções"
 3. Escolha o bónus disponível
 4. Clique em "Ativar" ou "Participar"
 5. Cumpra os requisitos especificados
 
-**Como Usar:**
+Como Usar:
 - Os bónus são automaticamente aplicados às apostas elegíveis
 - Verifique os termos de cada bónus (odds mínimas, tipos de apostas válidas)
 - O saldo de bónus aparece separado do saldo principal
 
-**Requisitos de Levantamento:**
+Requisitos de Levantamento:
 - A maioria dos bónus tem requisitos de rollover (ex: apostar 5x o valor do bónus)
 - Apenas apostas em odds acima de um certo valor contam
 - Após cumprir os requisitos, o valor do bónus é convertido em saldo real
 
-**Importante**: Leia sempre os Termos e Condições de cada promoção antes de participar.
+Importante: Leia sempre os Termos e Condições de cada promoção antes de participar.
 
-**Dúvidas?** Entre em contato pelo WhatsApp: +244 930 696 398`
+Dúvidas? Entre em contato pelo WhatsApp: +244 930 696 398`
       }
     ]
   },

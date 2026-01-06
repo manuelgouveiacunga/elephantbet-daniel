@@ -72,13 +72,39 @@ export const VideoSection = ({ videos }) => {
             </DialogTitle>
           </DialogHeader>
           <div className="aspect-video">
-            <iframe
-              src={selectedVideo?.videoUrl}
-              title={selectedVideo?.title}
-              className="w-full h-full rounded-lg"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
+            {selectedVideo?.type === "images" ? (
+              <div className="grid grid-cols-2 gap-4 h-full">
+                {selectedVideo.images.map((img, index) => (
+                  <div
+                    key={index}
+                    className="relative aspect-[4/3] rounded-lg overflow-hidden border border-white/10"
+                  >
+                    <img
+                      src={img}
+                      alt={`Depósito ${index + 1}`}
+                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                ))}
+              </div>
+            ) : selectedVideo?.videoUrl?.startsWith("http") ? (
+              <iframe
+                src={selectedVideo?.videoUrl}
+                title={selectedVideo?.title}
+                className="w-full h-full rounded-lg"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <video
+                src={selectedVideo?.videoUrl}
+                controls
+                className="w-full h-full rounded-lg"
+                autoPlay
+              >
+                Seu navegador não suporta a tag de vídeo.
+              </video>
+            )}
           </div>
         </DialogContent>
       </Dialog>
