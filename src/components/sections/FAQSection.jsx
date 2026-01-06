@@ -8,14 +8,14 @@ import {
 
 export const FAQSection = ({ faq }) => {
   return (
-    <section id="faq" className="py-16 md:py-24 bg-gray-50">
+    <section id="faq" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#24366E] mb-4">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
               {faq.title}
             </h2>
-            <p className="text-base sm:text-lg text-gray-600">{faq.subtitle}</p>
+            <p className="text-base sm:text-lg text-gray-300">{faq.subtitle}</p>
           </div>
 
           <Accordion type="single" collapsible className="space-y-4">
@@ -23,14 +23,14 @@ export const FAQSection = ({ faq }) => {
               <AccordionItem
                 key={item.id}
                 value={item.id}
-                className="bg-white border-2 border-gray-100 rounded-lg px-6 data-[state=open]:border-[#F72585] transition-all duration-300"
+                className="bg-card border-2 border-white/10 rounded-lg px-6 data-[state=open]:border-[#F72585] transition-all duration-300"
               >
                 <AccordionTrigger className="text-left hover:no-underline py-6">
-                  <span className="text-lg sm:text-xl font-bold text-[#24366E]">
+                  <span className="text-lg sm:text-xl font-bold text-foreground">
                     {item.question}
                   </span>
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 pb-6">
+                <AccordionContent className="text-gray-300 pb-6">
                   <div className="prose prose-sm sm:prose max-w-none">
                     {item.answer.split("\n").map((paragraph, idx) => {
                       if (
@@ -40,7 +40,7 @@ export const FAQSection = ({ faq }) => {
                         return (
                           <h4
                             key={idx}
-                            className="font-bold text-[#24366E] mt-4 mb-2"
+                            className="font-bold text-foreground mt-4 mb-2"
                           >
                             {paragraph.replace(/\*\*/g, "")}
                           </h4>

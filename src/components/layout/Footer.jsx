@@ -49,29 +49,6 @@ export const Footer = ({ footer }) => {
               <p className="text-white/80 text-sm">
                 Suporte disponível 24/7
               </p>
-              <div className="flex space-x-4 pt-2">
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#F72585] rounded-full flex items-center justify-center transition-all duration-300"
-                  aria-label="Facebook"
-                >
-                  <Facebook size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#F72585] rounded-full flex items-center justify-center transition-all duration-300"
-                  aria-label="Twitter"
-                >
-                  <Twitter size={20} />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 bg-white/10 hover:bg-[#F72585] rounded-full flex items-center justify-center transition-all duration-300"
-                  aria-label="Instagram"
-                >
-                  <Instagram size={20} />
-                </a>
-              </div>
             </div>
           </div>
         </div>

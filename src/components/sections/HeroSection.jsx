@@ -23,7 +23,7 @@ export const HeroSection = ({ hero }) => {
   return (
     <section
       id="hero"
-      className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-gradient-to-br from-white via-gray-50 to-white overflow-hidden"
+      className="relative pt-24 md:pt-32 pb-16 md:pb-24 bg-background overflow-hidden"
     >
       {/* Background Carousel */}
       <div className="absolute inset-0 z-0 pointer-events-none opacity-20">
@@ -32,7 +32,7 @@ export const HeroSection = ({ hero }) => {
           opts={{
             align: "start",
             loop: true,
-            duration: 50, 
+            duration: 50,
           }}
           className="w-full h-full"
         >
@@ -61,13 +61,13 @@ export const HeroSection = ({ hero }) => {
         <div className="flex flex-col items-center justify-center gap-12">
           {/* Content */}
           <div className="text-center max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-[#24366E] mb-6 leading-tight drop-shadow-sm">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-foreground mb-6 leading-tight drop-shadow-sm">
               {hero.title}
             </h1>
-            <p className="text-xl sm:text-2xl text-gray-800 mb-4 font-bold bg-white/40 backdrop-blur-[2px] inline-block px-4 py-1 rounded-full">
+            <p className="text-xl sm:text-2xl text-white mb-4 font-bold bg-white/10 backdrop-blur-[2px] inline-block px-4 py-1 rounded-full">
               {hero.subtitle}
             </p>
-            <p className="text-base sm:text-lg text-gray-700 mb-8 font-medium">
+            <p className="text-base sm:text-lg text-gray-200 mb-8 font-medium">
               {hero.description}
             </p>
 
@@ -76,13 +76,13 @@ export const HeroSection = ({ hero }) => {
               {hero.features.map((feature, index) => (
                 <div
                   key={index}
-                  className="flex items-center space-x-2 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-lg border border-[#24366E]/10 shadow-sm"
+                  className="flex items-center space-x-2 bg-white/5 backdrop-blur-sm px-4 py-2 rounded-lg border border-white/10 shadow-sm"
                 >
                   <CheckCircle2
                     className="text-[#F72585] flex-shrink-0"
                     size={20}
                   />
-                  <span className="text-sm sm:text-base text-gray-800 font-bold">
+                  <span className="text-sm sm:text-base text-white font-bold">
                     {feature}
                   </span>
                 </div>

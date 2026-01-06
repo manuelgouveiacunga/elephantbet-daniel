@@ -12,13 +12,13 @@ export const VideoSection = ({ videos }) => {
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   return (
-    <section id="tutoriais" className="py-16 md:py-24 bg-gray-50">
+    <section id="tutoriais" className="py-16 md:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#24366E] mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
             {videos.title}
           </h2>
-          <p className="text-base sm:text-lg text-gray-600">
+          <p className="text-base sm:text-lg text-gray-300">
             {videos.subtitle}
           </p>
         </div>
@@ -28,7 +28,7 @@ export const VideoSection = ({ videos }) => {
           {videos.videoList.map((video) => (
             <Card
               key={video.id}
-              className="group cursor-pointer overflow-hidden border-2 border-gray-100 hover:border-[#F72585] transition-all duration-300 hover:shadow-xl"
+              className="group cursor-pointer overflow-hidden bg-card border-2 border-white/10 hover:border-[#F72585] transition-all duration-300 hover:shadow-xl"
               onClick={() => setSelectedVideo(video)}
             >
               <CardContent className="p-0">
@@ -49,10 +49,10 @@ export const VideoSection = ({ videos }) => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-[#24366E] mb-2">
+                  <h3 className="text-lg font-bold text-foreground mb-2">
                     {video.title}
                   </h3>
-                  <p className="text-sm text-gray-600">{video.description}</p>
+                  <p className="text-sm text-gray-300">{video.description}</p>
                 </div>
               </CardContent>
             </Card>
@@ -65,9 +65,9 @@ export const VideoSection = ({ videos }) => {
         open={!!selectedVideo}
         onOpenChange={() => setSelectedVideo(null)}
       >
-        <DialogContent className="max-w-4xl">
+        <DialogContent className="max-w-4xl bg-card border-white/10">
           <DialogHeader>
-            <DialogTitle className="text-2xl font-bold text-[#24366E]">
+            <DialogTitle className="text-2xl font-bold text-foreground">
               {selectedVideo?.title}
             </DialogTitle>
           </DialogHeader>
